@@ -1,0 +1,478 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    width: 100%;
+    font-family: 'noto serif', serif;
+}
+
+/* Heading */
+.heading {
+    width: 100%;
+    height: 665px;
+    background-image: url('asset/b3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 1px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+}
+
+nav h1 {
+    font-size: 2.1em;
+    margin-left: 5%;
+    margin-top: -7px;
+    color: white;
+}
+
+nav ul {
+    width: 50%;
+    z-index: 2;
+}
+
+nav ul li {
+    margin-left: 15%;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #adadaa;
+    font-size: 1.3em;
+}
+
+nav ul li a:hover {
+    color: white;
+    /* border-bottom: 1px solid white;
+    padding-bottom: 4px;
+    transition: 1s; */
+}
+
+.col {
+    color: white;
+    /* transition: 1s; */
+}
+
+.capt {
+    width: 350px;
+    margin-left: 11%;
+    margin-top: 12%;
+    font-size: 35px;
+    color: white;
+    padding-bottom: 125px;
+    opacity: 0;
+    transform: translate(-50px, 0);
+}
+
+.captMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 1s;
+}
+
+.capt b {
+    font-family: 'Noto Serif', serif;
+}
+
+.capt span {
+    font-size: 20px;
+}
+
+.openMenu {
+    font-size: 2rem;
+    display: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icon ul li a {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.bg {
+    background-color: #1c1b21;
+    transition: 1s;
+}
+
+/* Akhir Heading */
+
+/* Content */
+.container {
+    width: 100%;
+}
+
+/* Hours */
+.open {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.open b {
+    font-family: 'Barlow', sans-serif;
+    font-size: 35px;
+}
+
+.open h3 {
+    font-size: 20;
+}
+
+/* Akhir Hours */
+
+/* Materials */
+.materials {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.materials b {
+    font-size: 35px;
+}
+
+.container-mat {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+    opacity: 0;
+    transform: translate(0, -50px);
+}
+
+.mat-des p {
+    width: 500px;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.container-mat img {
+    width: 20%;
+    height: 20%;
+}
+
+.muncul {
+    opacity: 1;
+    transition: .5s;
+    transform: translate(0, 0);
+}
+
+/* Akhir Materials */
+
+/* Menu */
+.menu {
+    width: 100%;
+    margin-top: 150px;
+}
+
+.menu h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.container-menu {
+    max-width: 1000px;
+    margin: 2px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-menu {
+    width: 250px;
+    height: 200px;
+    background-color: #1c1b21;
+    margin: 1px;
+    overflow: hidden;
+}
+
+/* Akhir Menu */
+/* Akhir Content */
+
+/* banner */
+.jumbotron {
+    width: 100%;
+    height: 300px;
+    background-image: url('asset/banner2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 50px;
+}
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #1c1b21;
+}
+
+.container-footer {
+    display: flex;
+    padding-top: 40px;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-footer {
+    color: white;
+    width: 200px;
+    margin: 10px;
+}
+
+.text-footer p {
+    color: #adadaa;
+}
+
+.sosmed {
+    margin-top: 60px;
+    margin-left: 80px;
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.sosmed a {
+    font-size: 30px;
+    color: #adadaa;
+}
+
+.sosmed a:hover {
+    color: white;
+}
+
+.copy {
+    color: white;
+    background-color: #1c1b21;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+.copy p {
+    color: #e4a457;
+}
+
+.copy p a {
+    color: #adadaa;
+}
+
+.copy p a:hover {
+    color: white;
+}
+
+.copy p span {
+    font-size: 25px;
+    margin: 3px;
+}
+
+/* Reponsive breakpoint */
+
+/* Mobile */
+@media(max-width: 515px) {
+
+    .heading {
+        height: 500px;
+    }
+
+    .heading h1 {
+        font-size: 1.5em;
+    }
+
+    nav h1 {
+        margin-top: 1px;
+    }
+
+    .capt {
+        font-size: 1.5em;
+        max-width: 250px;
+    }
+
+    .materials b {
+        font-size: 30px;
+    }
+
+    .container-mat img {
+        display: none;
+    }
+
+    .mat-des {
+        justify-content: center;
+    }
+
+    .mat-des h1 {
+        font-size: 5em;
+    }
+
+    .mat-des p {
+        justify-content: center;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .open {
+        overflow: hidden;
+    }
+
+    .open img {
+        display: none;
+    }
+
+    .container-footer {
+        width: 100%;
+        /* display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; */
+    }
+
+    .text-footer {
+        font-size: 12px;
+    }
+
+    .sosmed {
+        margin: auto;
+        width: 200px;
+
+    }
+
+    .sosmed a i {
+        font-size: .8em;
+    }
+
+    .copy {
+        font-size: .7em;
+        margin-top: 20px;
+    }
+
+    .copy p span {
+        font-size: .9em;
+    }
+
+
+}
+
+/* Tab */
+@media(max-width: 700px) {
+
+    .container-mat img {
+        width: 30%;
+        height: 30%;
+    }
+
+    .mat-des h1 {
+        font-size: 1.6em;
+    }
+
+    .mat-des p {
+        width: 300px;
+        text-align: center;
+        font-size: 1.4em;
+    }
+}
+
+/* Tablet */
+@media(max-width: 992px) {
+    .heading {
+        background-image: url('asset/restab2.jpg');
+        background-position: top;
+    }
+
+    nav {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    nav ul {
+        margin-right: 4%;
+    }
+
+    nav ul li {
+        margin-left: 12%;
+    }
+
+    nav h1 {
+        margin-left: 5%;
+    }
+
+    nav .mainMenu {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        opacity: .9;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        color: white;
+    }
+
+    nav .openMenu {
+        display: inline;
+        margin-top: -5px;
+        color: white;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        font-size: 2.5em;
+    }
+
+    nav .mainMenu li a {
+        font-size: 2em;
+        margin: 2px auto;
+    }
+
+    nav .mainMenu li {
+        margin-bottom: 20px;
+        padding-right: 19px;
+    }
+
+    .mainMenu .icon ul {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    .capt {
+        width: 400px;
+        margin: 200px auto;
+    }
+
+}
