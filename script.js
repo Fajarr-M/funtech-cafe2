@@ -51,6 +51,16 @@ $(window).scroll(function(){
     if (wScroll < $(".container-mat").offset().top - 600 ){
         $(".container-mat").removeClass("muncul");
     }
+
+    //menu
+
+    if (wScroll > $(".container-menu").offset().top - 400 ){
+        $(".container-menu").addClass("muncul");
+    }
+
+    if (wScroll < $(".container-menu").offset().top - 650 ){
+        $(".container-menu").removeClass("muncul");
+    }
 });
 
 
