@@ -208,6 +208,10 @@ nav .mainMenu .closeMenu,
     overflow: hidden;
 }
 
+.container-menu :first-child::after {
+    content: 'fajar';
+}
+
 /* Akhir Menu */
 /* Akhir Content */
 

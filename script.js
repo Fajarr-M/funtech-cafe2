@@ -9,13 +9,6 @@ $(".openMenu").click(function(){
         "display" : "flex", "top" : "0"
     });
 });
-
-$(".box-menu").hover(function(){
-    $(".box-menu").css("opacity",".5");
-},
-function(){
-    $(".box-menu").css("opacity","1");
-});
 // Paralax
 
 $(window).on("load",function(){
